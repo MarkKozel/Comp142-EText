@@ -1,4 +1,4 @@
-<template><p><a href="https://app.netlify.com/sites/cs-131/deploys" target="_blank" rel="noopener noreferrer"><img src="https://api.netlify.com/api/v1/badges/0986a723-012d-469f-b2fc-d92df0c0e906/deploy-status" alt="Netlify Status"><OutboundLink/></a></p>
+<template><p><a href="https://app.netlify.com/sites/cs131/deploys" target="_blank" rel="noopener noreferrer"><img src="https://api.netlify.com/api/v1/badges/3d257301-cf65-416b-9219-845ea673442d/deploy-status" alt="Netlify Status"><OutboundLink/></a></p>
 <p>Course logo by <a rel="license" href="http://3xhumed.deviantart.com/">Exhumed (CC Attribution-Noncommercial-No Derivate 4.0)</a>
 <br>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.

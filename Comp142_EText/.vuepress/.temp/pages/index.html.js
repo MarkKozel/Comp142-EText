@@ -30,8 +30,14 @@ export const data = {
   "headers": [],
   "filePathRelative": "index.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1632694848000,
+    "contributors": [
+      {
+        "name": "markkozel",
+        "email": "development@markkozel.net",
+        "commits": 1
+      }
+    ]
   }
 }
 

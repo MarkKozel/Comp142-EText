@@ -15,7 +15,7 @@ features:
 footer: Mark Kozel (MKozel@HancockCollege.edu) - Allan Hancock College, Santa Maria, Ca
 ---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0986a723-012d-469f-b2fc-d92df0c0e906/deploy-status)](https://app.netlify.com/sites/cs-131/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3d257301-cf65-416b-9219-845ea673442d/deploy-status)](https://app.netlify.com/sites/cs131/deploys)
 
 Course logo by <a rel="license" href="http://3xhumed.deviantart.com/">Exhumed (CC Attribution-Noncommercial-No Derivate 4.0)</a>
 <br>

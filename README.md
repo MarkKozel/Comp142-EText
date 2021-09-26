@@ -45,7 +45,7 @@ The VuePress site is built into a static web site that can be deployed to variou
 
 The Documentation Source will be available on GitHub to allow others to instructors to modify and deploy their own version of the documentation. Other instructors couple then deploy their modified documentation to their own web sites for their students to access
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0986a723-012d-469f-b2fc-d92df0c0e906/deploy-status)](https://app.netlify.com/sites/cs-131/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3d257301-cf65-416b-9219-845ea673442d/deploy-status)](https://app.netlify.com/sites/cs131/deploys)
 
 ## Development Log
 20210926 - Re-creating Project from scratch. Abandoning https://github.com/MarkKozel/cs131_textbook.git to create new repo . Parts of cs1-1_textbook will be manually integrated into new project
