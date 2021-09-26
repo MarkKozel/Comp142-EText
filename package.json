@@ -1,0 +1,20 @@
+{
+  "name": "comp142-etext",
+  "version": "0.0.1",
+  "description": "COMP-142 Computer Organization online textbook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Mark Kozel",
+    "email": "Development@markkozel.net"
+  },
+  "contributors": [
+    {
+      "name": "Mark Kozel",
+      "email": "MKozel@HancockCollege.edu"
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0"
+}
