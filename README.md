@@ -50,6 +50,8 @@ The Documentation Source will be available on GitHub to allow others to instruct
 ## Development Log
 20210926 - Re-creating Project from scratch. Abandoning https://github.com/MarkKozel/cs131_textbook.git to create new repo . Parts of cs1-1_textbook will be manually integrated into new project
 
+Created basic VuePress site with images and styles from prototype site. Created new Netlify site w/ Auto Deploy from Github push
+
 20210901 - CC ECHO Grant awarded for completion of COMP-142/CS-131 OER Course Material
 
          - Adding Jest fro Vue Component Testing. Will look into Cypress for E2E testing for CI/CD testing

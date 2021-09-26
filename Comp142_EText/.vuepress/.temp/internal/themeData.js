@@ -1,5 +1,16 @@
 export const themeData = {
   "logo": "/images/CourseLogo.png",
+  "repo": "",
+  "editLinks": false,
+  "docsDir": "",
+  "editLinkText": "",
+  "lastUpdated": false,
+  "nav": [
+    {
+      "text": "Course Info",
+      "link": "/CourseInfo/"
+    }
+  ],
   "locales": {
     "/": {
       "selectLanguageName": "English"
@@ -7,14 +18,11 @@ export const themeData = {
   },
   "navbar": [],
   "darkMode": true,
-  "repo": null,
   "selectLanguageText": "Languages",
   "selectLanguageAriaLabel": "Select language",
   "sidebar": "auto",
   "sidebarDepth": 2,
   "editLink": true,
-  "editLinkText": "Edit this page",
-  "lastUpdated": true,
   "lastUpdatedText": "Last Updated",
   "contributors": true,
   "contributorsText": "Contributors",
