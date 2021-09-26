@@ -4,7 +4,8 @@
   "description": "COMP-142 Computer Organization online textbook",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vuepress dev Comp142_EText",
+    "build": "vuepress build Comp142_EText"
   },
   "author": {
     "name": "Mark Kozel",
@@ -16,5 +17,18 @@
       "email": "MKozel@HancockCollege.edu"
     }
   ],
-  "license": "CC-BY-NC-SA-4.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkKozel/Comp142-EText.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarkKozel/Comp142-EText/issues"
+  },
+  "homepage": "https://github.com/MarkKozel/Comp142-EText#readme",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "@vuepress/plugin-palette": "^2.0.0-beta.26",
+    "@vuepress/plugin-register-components": "^1.8.2",
+    "vuepress": "^2.0.0-beta.26"
+  }
 }
