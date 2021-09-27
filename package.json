@@ -27,7 +27,9 @@
   "homepage": "https://github.com/MarkKozel/Comp142-EText#readme",
   "license": "CC-BY-NC-SA-4.0",
   "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.8.2",
     "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
     "vuepress": "^1.8.2",
     "vuepress-plugin-container": "^2.1.5",
     "vuepress-plugin-copyright": "^1.0.2",

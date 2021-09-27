@@ -139,5 +139,7 @@ module.exports = {
         after: "</div>",
       },
     ],
+    ['@vuepress/plugin-nprogress'],
+    ['@vuepress/active-header-links'],
   ],
 }
