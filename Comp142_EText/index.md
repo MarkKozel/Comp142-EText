@@ -8,7 +8,7 @@ tagline: Transistors to Assembly - A Bottom-up View of Computer Science
 #   - link: https://www.google.com
 #   - type: primary
 actionText: Get Started
-actionLink: /CourseInto/
+actionLink: /CourseInfo/
 features:
 - title: School
   details: Allan Hancock College, Santa Maria, Ca

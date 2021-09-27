@@ -4,7 +4,7 @@
 ## Project
 Create a set of online resources to replace current textbook for CS-131, Computer Organization at Allan Hancock
 
-Use [VuePress 2](https://v2.vuepress.vuejs.org/) Vue-based static site generator, [Markdown](https://daringfireball.net/projects/markdown/), and [Vue](https://vuejs.org/) interactive element to create an online, interactive, and searchable set of resources for college students pursuing a degree in Computer Science
+Use [VuePress](https://vuepress.vuejs.org/) Vue-based static site generator, [Markdown](https://daringfireball.net/projects/markdown/), and [Vue](https://vuejs.org/) interactive element to create an online, interactive, and searchable set of resources for college students pursuing a degree in Computer Science
 
 Additionally, this project will be structures to make integration into other college Computer Science programs simpler and flexible
 
@@ -49,6 +49,8 @@ The Documentation Source will be available on GitHub to allow others to instruct
 
 ## Development Log
 20210926 - Re-creating Project from scratch. Abandoning https://github.com/MarkKozel/cs131_textbook.git to create new repo . Parts of cs1-1_textbook will be manually integrated into new project
+
+Reverted to VuePress 1 as the beta is still a problem
 
 Created basic VuePress site with images and styles from prototype site. Created new Netlify site w/ Auto Deploy from Github push
 
