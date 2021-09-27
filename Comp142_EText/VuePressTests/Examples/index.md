@@ -1,7 +1,7 @@
 # Examples Section
 
-## MD file from outside (../LC3) folder
-[LC-3 Test Page](../LC3/LC3Test.md)
+<!-- ## MD file from outside (../LC3) folder
+[LC-3 Test Page](../LC3/LC3Test.md) -->
 
 ## Page Templates
 This resource is divided into Units
@@ -48,31 +48,37 @@ npx create-vuepress-site [optionalDirectoryName]
 
 ## Links to other .md files
 ```md
-[one.md](./one.md)
+[one.md](../one.md)
 ```
-[one.md](./one.md)
+[one.md](../one.md)
 
-[two.md](./two.md)
+[two.md](../two.md)
 
 ## Images
 ```
-<img src="/assets/img/01_Foundation/2000px-Biological_classification_L_Pengo_vflip.svg.png" width="10%" height="10%">
+<img src="/images/CourseLogo.png" width="40%" height="40%">
 ```
-<img src="/assets/img/01_Foundation/2000px-Biological_classification_L_Pengo_vflip.svg.png" width="10%" height="10%">
+<img src="/images/CourseLogo.png" width="40%" height="40%">
+
+## Image in Markdown
+```
+![Alt text](/images/CourseLogo.png)
+```
+![Alt text](/images/CourseLogo.png)
 
 ## Text and Image in Table
 ```html
 <table>
     <tr>
-        <td style="width:80%" >Abstraction in Biology </td>
-        <td style="width:20%"><img src="/assets/img/01_Foundation/2000px-Biological_classification_L_Pengo_vflip.svg.png" style="max-height:100%; max-width:100%"/> </td>
+        <td style="width:20%" >Course Logo </td>
+        <td style="width:80%"><img src="/images/CourseLogo.png" style="max-height:100%; max-width:100%"/> </td>
     </tr>
 </table>
 ```
 <table>
     <tr>
-        <td style="width:80%" >Abstraction in Biology </td>
-        <td style="width:20%"><img src="/assets/img/01_Foundation/2000px-Biological_classification_L_Pengo_vflip.svg.png" style="max-height:100%; max-width:100%"/> </td>
+        <td style="width:20%" >Course Logo </td>
+        <td style="width:80%"><img src="/images/CourseLogo.png" style="max-height:100%; max-width:100%"/> </td>
     </tr>
 </table>
 
@@ -85,7 +91,13 @@ vue files are in .vuepress\component folder
 <LC3Instruction opName="Some LC-3 Instruction" :bitPattern="{OpCode:'1010', More: '101010', TheRest:'101010'}" :descriptions="[{OPCode:''},{More:'more bits'},{TheRest:'Final bits'}]"  :examples="['TRAP x23 ; Call IN trap rountine', 'IN ; Call IN trap rountine']"/>
 ```
 
-<LC3Instruction opName="Some LC-3 Instruction" :bitPattern="{OpCode:'1010', More: '101010', TheRest:'101010'}" :descriptions="[{OPCode:''},{More:'more bits'},{TheRest:'Final bits'}]"  :examples="['TRAP x23 ; Call IN trap rountine', 'IN ; Call IN trap rountine']"/>
+<LC3Instruction opName="Some LC-3 Instruction" :bitPattern="{OpCode:'1010', More: '101010', TheRest:'101010'}" :descriptions="[{OPCode:''},{More:'more bits'},{TheRest:'Final bits'}]"  :examples="['TRAP x23 ; Call IN trap routine', 'IN ; Call IN trap routine']"/>
+
+#### Props
+  - **opName**: { String} Title at top of Instruction Box
+  - **bitPattern**: { Object } Contains name/bit string pairs for Bit section in table
+  - **descriptions**: { Array } Contains individual objects with name/description pairs
+  - **examples**: { Array } string elements with 1 or more examples of instruction
 
 ### True/False Inline Questions
 vue files are in .vuepress\component folder
