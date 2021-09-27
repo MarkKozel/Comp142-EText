@@ -1,18 +1,25 @@
 ---
-layout: SpecialLayout
+layout: Layout_Unit
 ---
-
-::: slot header
-# Layout Examples
+::: slot PageTitle
+# PageTitle Slot
 :::
 
-dfsdfgsdfgsdfhsfgdhfdsg
+::: slot Introduction
+## Introduction Slot
+:::
 
-```
-<<< @importable
-```
+::: slot KeyPoints
+## Key Points Slot
+:::
 
-::: slot footer
-Here's some contact info
+main content area
+
+::: slot Review
+## Review Slow
+:::
+
+::: slot Summary
+## Summary Slot
 :::
 
