@@ -48,6 +48,8 @@ The Documentation Source will be available on GitHub to allow others to instruct
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3d257301-cf65-416b-9219-845ea673442d/deploy-status)](https://app.netlify.com/sites/cs131/deploys)
 
 ## Development Log
+20210927 - Working on creating layouts with Vue components and VuePress [Markdown Slots](https://v1.vuepress.vuejs.org/guide/markdown-slot.html#why-do-i-need-markdown-slot). So for I have not been able to read in .md files for the slots, but I did generate Layout_Unit.vue to create specific sections. Trying different styles, but I don;t have an eye for that
+
 20210926 - Re-creating Project from scratch. Abandoning https://github.com/MarkKozel/cs131_textbook.git to create new repo . Parts of cs1-1_textbook will be manually integrated into new project
 
 Reverted to VuePress 1 as the beta is still a problem

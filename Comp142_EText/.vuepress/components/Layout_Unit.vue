@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" style="padding-left: 5em; padding-right: 5em">
     <PageTitle class="unitPageTitle">
       <Content slot-key="PageTitle" />
     </PageTitle>
@@ -12,7 +12,7 @@
       <Content slot-key="KeyPoints" />
     </KeyPoints>
 
-    <main>
+    <main class="unitContent">
       <Content />
     </main>
 

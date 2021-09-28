@@ -26,21 +26,39 @@ module.exports = {
       { text: 'Test', link: '/VuePressTests/' },
     ],
   },
-
+  // displayAllHeaders: true, //display all header links for every page
   sidebar: {
-    '/CourseInfo/': [
-      '',
-    ],
     '/VuePressTests/': [
       '',
       {
-        title: "Examples",
-        path: "Examples/",
+        title: 'Examples Page',
+        path: 'Examples/',
         collapsable: true,
         sidebarDepth: 3,
       },
-      'Templates/',
-      'Guide/'
+      {
+        title: 'Layouts Page',
+        path: 'Layouts/',
+        collapsable: true,
+        sidebarDepth: 3,
+      },
+      {
+        title: 'Templates Page',
+        path: 'Templates/',
+        collapsable: true,
+        sidebarDepth: 3,
+      },
+      {
+        title: 'Guide Page',
+        path: 'Guide/',
+        collapsable: true,
+        sidebarDepth: 3,
+      },
+    ],
+    //fallback
+    '/': [
+      '/CourseInfo/',
+
     ]
   },
 
