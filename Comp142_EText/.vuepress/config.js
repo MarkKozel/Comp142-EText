@@ -23,6 +23,7 @@ module.exports = {
     lastUpdated: false,
     nav: [ //Navigation at the top of the page
       { text: 'Course Info', link: '/CourseInfo/', },
+      { text: 'EText', link: '/EText/', },
       { text: 'Test', link: '/VuePressTests/' },
     ],
   },

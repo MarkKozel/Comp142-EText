@@ -13,6 +13,7 @@ tags: []
 ---
 
 # {{ $frontmatter.title }}
+#### {{ $frontmatter.shorttitle }}
 
 Description of Unit
 
@@ -27,12 +28,14 @@ Main page for a Section, which presents more detailed parts of a Unit, like *uns
 Sections will contain 1 or more [topics](#topic-pages) that present details information, how-tos, and examples
 ```text
 ---
-title: Section X - SECTION NAME
+title: SECTION NAME
 shorttitle: OVERVIEW DESCRIPTION
 tags: []
 ---
 
 # {{ $frontmatter.title }}
+## {{ $frontmatter.shorttitle }}
+
 This section will define the concepts and operations used in modern computer systems
 
 ## [UNIT X](LINK TO UNIT FILE)
@@ -47,14 +50,14 @@ Main page for a Topic, which presents lowest level of detailed parts of a relate
 
 ```text
 ---
-title: SECTION X - TOPIC NAME
+title: SECTION - TOPIC
 description: OVERVIEW DESCRIPTION
 tags: []
 ---
 
 # {{ $frontmatter.title }}
 
-{{ $frontmatter.description }}
+#### {{ $frontmatter.description }}
 
 <KeyConcepts :ConceptArray= "[
 {
