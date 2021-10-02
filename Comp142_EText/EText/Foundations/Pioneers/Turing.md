@@ -2,8 +2,8 @@
 title: Pioneers - Turing
 description: Theories and Influence of Alan Turing
 tags: [Turing, General Purpose Computer, Theory, State, State Machine]
-prev: ./index
-next: ./vonNeumann
+# prev: ./index
+# next: ./vonNeumann
 ---
 
 # {{ $frontmatter.title }}
@@ -17,7 +17,7 @@ next: ./vonNeumann
 },
 {
   Concept:'Maintaining State',
-  Details:'The state machine is the heart of Turing\'s theory, allowing computer to execute based on changing inputs and internal events'
+  Details:'The state machine is the heart of Turings theory, allowing computer to execute based on changing inputs and internal events'
 },
 {
   Concept:'The Turing Machine',

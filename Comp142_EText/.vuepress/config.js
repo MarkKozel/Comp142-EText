@@ -16,10 +16,10 @@ module.exports = {
 
   themeConfig: {
     logo: '/images/CourseLogo.png',
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
+    // repo: '',
+    // editLinks: false,
+    // docsDir: '',
+    // editLinkText: '',
     lastUpdated: false,
     nav: [ //Navigation at the top of the page
       { text: 'Course Info', link: '/CourseInfo/', },
@@ -28,40 +28,49 @@ module.exports = {
     ],
   },
   // displayAllHeaders: true, //display all header links for every page
-  sidebar: {
-    '/VuePressTests/': [
-      '',
-      {
-        title: 'Examples Page',
-        path: 'Examples/',
-        collapsable: true,
-        sidebarDepth: 3,
-      },
-      {
-        title: 'Layouts Page',
-        path: 'Layouts/',
-        collapsable: true,
-        sidebarDepth: 3,
-      },
-      {
-        title: 'Templates Page',
-        path: 'Templates/',
-        collapsable: true,
-        sidebarDepth: 3,
-      },
-      {
-        title: 'Guide Page',
-        path: 'Guide/',
-        collapsable: true,
-        sidebarDepth: 3,
-      },
-    ],
-    //fallback
-    '/': [
-      '/CourseInfo/',
 
-    ]
-  },
+  sidebar: 'auto',
+  // sidebar: {
+  // '/EText/Foundations/': [
+  //   '',
+  //   'NumberSystems',
+  //   "DigitalLogicCircuits",
+  //   "Pioneers"
+  // ],
+  //   '/VuePressTests/': [
+  //     '',
+  //     {
+  //       title: 'Examples Page',
+  //       path: 'Examples/',
+  //       collapsable: true,
+  //       sidebarDepth: 3,
+  //     },
+  //     {
+  //       title: 'Layouts Page',
+  //       path: 'Layouts/',
+  //       collapsable: true,
+  //       sidebarDepth: 3,
+  //     },
+  //     {
+  //       title: 'Templates Page',
+  //       path: 'Templates/',
+  //       collapsable: true,
+  //       sidebarDepth: 3,
+  //     },
+  //     {
+  //       title: 'Guide Page',
+  //       path: 'Guide/',
+  //       collapsable: true,
+  //       sidebarDepth: 3,
+  //     },
+  //   ],
+
+  //fallback
+  // '/': [
+  //   '/CourseInfo/',
+  //   '/EText/'
+  // ]
+  // },
 
   markdown: {
     code: {
