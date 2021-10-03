@@ -1,15 +1,25 @@
 export const data = {
   "key": "v-8daa1a0e",
   "path": "/",
-  "title": "",
+  "title": "CS-131 Computer Organization",
   "lang": "en-US",
   "frontmatter": {
     "home": true,
-    "heroText": "CS-131 Computer Organization",
+    "title": "CS-131 Computer Organization",
     "heroImage": "/images/CPU-Z-icon.png",
     "tagline": "Transistors to Assembly - A Bottom-up View of Computer Science",
-    "actionText": "Get Started",
-    "actionLink": "/EText/",
+    "actions": [
+      {
+        "text": "CS-131 E-Textbook",
+        "link": "/EText/",
+        "type": "primary"
+      },
+      {
+        "text": "About CS-131",
+        "link": "/CourseInformation/",
+        "type": "secondary"
+      }
+    ],
     "features": [
       {
         "title": "School",
@@ -30,8 +40,14 @@ export const data = {
   "headers": [],
   "filePathRelative": "index.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1633234937000,
+    "contributors": [
+      {
+        "name": "markkozel",
+        "email": "development@markkozel.net",
+        "commits": 1
+      }
+    ]
   }
 }
 

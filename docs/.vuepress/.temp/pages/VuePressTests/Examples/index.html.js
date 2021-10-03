@@ -119,8 +119,14 @@ export const data = {
   ],
   "filePathRelative": "VuePressTests/Examples/index.md",
   "git": {
-    "updatedTime": null,
-    "contributors": []
+    "updatedTime": 1633234937000,
+    "contributors": [
+      {
+        "name": "markkozel",
+        "email": "development@markkozel.net",
+        "commits": 1
+      }
+    ]
   }
 }
 
