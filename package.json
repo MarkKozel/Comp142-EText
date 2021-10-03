@@ -4,8 +4,8 @@
   "description": "COMP-142 Computer Organization online textbook",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "vuepress dev Comp142_EText",
+    "build": "vuepress build Comp142_EText"
   },
   "author": {
     "name": "Mark Kozel",
