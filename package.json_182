@@ -1,0 +1,36 @@
+{
+  "name": "comp142-etext",
+  "version": "0.0.1",
+  "description": "COMP-142 Computer Organization online textbook",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "author": {
+    "name": "Mark Kozel",
+    "email": "Development@markkozel.net"
+  },
+  "contributors": [
+    {
+      "name": "Mark Kozel",
+      "email": "MKozel@HancockCollege.edu"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkKozel/Comp142-EText.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MarkKozel/Comp142-EText/issues"
+  },
+  "homepage": "https://github.com/MarkKozel/Comp142-EText#readme",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-container": "^2.1.5",
+    "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-plugin-demo-code": "^0.6.0"
+  }
+}
