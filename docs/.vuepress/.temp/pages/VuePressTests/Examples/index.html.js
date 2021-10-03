@@ -119,12 +119,12 @@ export const data = {
   ],
   "filePathRelative": "VuePressTests/Examples/index.md",
   "git": {
-    "updatedTime": 1633234937000,
+    "updatedTime": 1633286222000,
     "contributors": [
       {
         "name": "markkozel",
         "email": "development@markkozel.net",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

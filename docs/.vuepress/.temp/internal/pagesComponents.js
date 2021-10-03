@@ -3,26 +3,24 @@ import { defineAsyncComponent } from 'vue'
 export const pagesComponents = {
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/index.html.vue")),
-  // path: /CourseInformation/
-  "v-16d151d2": defineAsyncComponent(() => import(/* webpackChunkName: "v-16d151d2" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/CourseInformation/index.html.vue")),
   // path: /EText/
   "v-442ae796": defineAsyncComponent(() => import(/* webpackChunkName: "v-442ae796" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/EText/index.html.vue")),
+  // path: /CourseInformation/
+  "v-16d151d2": defineAsyncComponent(() => import(/* webpackChunkName: "v-16d151d2" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/CourseInformation/index.html.vue")),
   // path: /VuePressTests/
   "v-14482378": defineAsyncComponent(() => import(/* webpackChunkName: "v-14482378" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/VuePressTests/index.html.vue")),
   // path: /VuePressTests/one.html
   "v-60de0c77": defineAsyncComponent(() => import(/* webpackChunkName: "v-60de0c77" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/VuePressTests/one.html.vue")),
   // path: /VuePressTests/two.html
   "v-556c7851": defineAsyncComponent(() => import(/* webpackChunkName: "v-556c7851" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/VuePressTests/two.html.vue")),
+  // path: /EText/Foundations/
+  "v-7eb98676": defineAsyncComponent(() => import(/* webpackChunkName: "v-7eb98676" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/EText/Foundations/index.html.vue")),
   // path: /CourseInformation/CourseOrganization/
   "v-58e6a06a": defineAsyncComponent(() => import(/* webpackChunkName: "v-58e6a06a" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/CourseInformation/CourseOrganization/index.html.vue")),
   // path: /CourseInformation/CourseRational/
   "v-193b2a62": defineAsyncComponent(() => import(/* webpackChunkName: "v-193b2a62" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/CourseInformation/CourseRational/index.html.vue")),
-  // path: /EText/Foundations/
-  "v-7eb98676": defineAsyncComponent(() => import(/* webpackChunkName: "v-7eb98676" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/EText/Foundations/index.html.vue")),
   // path: /VuePressTests/Examples/
   "v-0eca6b22": defineAsyncComponent(() => import(/* webpackChunkName: "v-0eca6b22" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/VuePressTests/Examples/index.html.vue")),
-  // path: /VuePressTests/Guide/
-  "v-7da33c17": defineAsyncComponent(() => import(/* webpackChunkName: "v-7da33c17" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/VuePressTests/Guide/index.html.vue")),
   // path: /VuePressTests/Layouts/importable.html
   "v-6fac4960": defineAsyncComponent(() => import(/* webpackChunkName: "v-6fac4960" */"/home/mark/Development/Docs/Comp142-EText/docs/.vuepress/.temp/pages/VuePressTests/Layouts/importable.html.vue")),
   // path: /VuePressTests/Layouts/

@@ -2,16 +2,15 @@ import { Vuepress } from '@vuepress/client/lib/components/Vuepress'
 
 const routeItems = [
   ["v-8daa1a0e","/","CS-131 Computer Organization",["/index.html","/index.md"]],
-  ["v-16d151d2","/CourseInformation/","CS 131 - Computer Organization",["/CourseInformation/index.html","/CourseInformation/index.md"]],
   ["v-442ae796","/EText/","CS-131 Computer Organization EText",["/EText/index.html","/EText/README.md"]],
+  ["v-16d151d2","/CourseInformation/","CS 131 - Computer Organization",["/CourseInformation/index.html","/CourseInformation/index.md"]],
   ["v-14482378","/VuePressTests/","VuePress Test Resources",["/VuePressTests/index.html","/VuePressTests/index.md"]],
   ["v-60de0c77","/VuePressTests/one.html","Overview - one.md",["/VuePressTests/one","/VuePressTests/one.md"]],
   ["v-556c7851","/VuePressTests/two.html","Overview - two.md",["/VuePressTests/two","/VuePressTests/two.md"]],
+  ["v-7eb98676","/EText/Foundations/","Foundations",["/EText/Foundations/index.html","/EText/Foundations/README.md"]],
   ["v-58e6a06a","/CourseInformation/CourseOrganization/","Course Organization",["/CourseInformation/CourseOrganization/index.html","/CourseInformation/CourseOrganization/index.md"]],
   ["v-193b2a62","/CourseInformation/CourseRational/","Course Rationale",["/CourseInformation/CourseRational/index.html","/CourseInformation/CourseRational/index.md"]],
-  ["v-7eb98676","/EText/Foundations/","Foundations",["/EText/Foundations/index.html","/EText/Foundations/README.md"]],
   ["v-0eca6b22","/VuePressTests/Examples/","Examples Section",["/VuePressTests/Examples/index.html","/VuePressTests/Examples/index.md"]],
-  ["v-7da33c17","/VuePressTests/Guide/","Guide",["/VuePressTests/Guide/index.html","/VuePressTests/Guide/index.md"]],
   ["v-6fac4960","/VuePressTests/Layouts/importable.html","",["/VuePressTests/Layouts/importable","/VuePressTests/Layouts/importable.md"]],
   ["v-b9c295ac","/VuePressTests/Layouts/","Layout Title from Frontmatter",["/VuePressTests/Layouts/index.html","/VuePressTests/Layouts/index.md"]],
   ["v-e0d52d0c","/VuePressTests/Templates/","Page Templates",["/VuePressTests/Templates/index.html","/VuePressTests/Templates/index.md"]],

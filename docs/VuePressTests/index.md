@@ -6,6 +6,4 @@ Demos and examples of using built-in and custom VuePress elements in markdown pa
 
 [Layouts](./Layouts)
 
-[Guide](./Guide)
-
 [Templates](./Templates)
