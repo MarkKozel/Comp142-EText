@@ -7,7 +7,7 @@
         </td>
 
           <table class="inner" cellspacing="0" cellpadding="0">
-            <tr class="inner" v-for="concept in ConceptArray">
+            <tr class="inner" v-for="concept in ConceptArray :key="concept.Concept">
               <td class="inner">
                 <p :id="concept.Concept" class="concept">{{ concept.Concept }}</p>
               </td>

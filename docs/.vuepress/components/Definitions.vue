@@ -2,7 +2,7 @@
   <div class="question-tf">
     <table style="width:100%">
       <tr>
-        <td v-for></td>
+        
       </tr>
     </table>
   </div>
