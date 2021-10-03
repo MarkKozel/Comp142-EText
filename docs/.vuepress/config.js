@@ -1,3 +1,6 @@
+const path = require('path');
+// const { dirname } = require('path/posix');
+
 module.exports = {
   port: 8081,
   title: "CS 131 - Computer Organization",
@@ -60,40 +63,6 @@ module.exports = {
       '',
     ]
   },
-  //   '/VuePressTests/': [
-  //     '',
-  //     {
-  //       title: 'Examples Page',
-  //       path: 'Examples/',
-  //       collapsable: true,
-  //       sidebarDepth: 3,
-  //     },
-  //     {
-  //       title: 'Layouts Page',
-  //       path: 'Layouts/',
-  //       collapsable: true,
-  //       sidebarDepth: 3,
-  //     },
-  //     {
-  //       title: 'Templates Page',
-  //       path: 'Templates/',
-  //       collapsable: true,
-  //       sidebarDepth: 3,
-  //     },
-  //     {
-  //       title: 'Guide Page',
-  //       path: 'Guide/',
-  //       collapsable: true,
-  //       sidebarDepth: 3,
-  //     },
-  //   ],
-
-  //fallback
-  // '/': [
-  //   '/CourseInfo/',
-  //   '/EText/'
-  // ]
-
 
   markdown: {
     code: {
@@ -101,8 +70,12 @@ module.exports = {
     }
   },
 
-
   plugins: [
+    '@vuepress/register-components',
+    {
+      componentsDir: path.join(__dirname, './components'),
+    },
+
     'demo-code', {
       jsLibs: [
         // umd

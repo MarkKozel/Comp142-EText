@@ -40,12 +40,12 @@ export const data = {
   "headers": [],
   "filePathRelative": "index.md",
   "git": {
-    "updatedTime": 1633234937000,
+    "updatedTime": 1633236323000,
     "contributors": [
       {
         "name": "markkozel",
         "email": "development@markkozel.net",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

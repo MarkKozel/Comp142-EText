@@ -117,11 +117,14 @@ vue files are in .vuepress\component folder
 
 <QuestionMC question="The best way to get past a problem is..." answer='C' AChoice="Ignore it" BChoice="Deny as long as possible" CChoice="Address is directly" DChoice="Hope tomorrow is better" rightAnswerFeedback="Right! It make make others uncomfortable, but this is better in the long term" wrongAnswerFeedback="Bandaid Solution!"/>
 
+
 ### You Do It activity header
 
 ```vue
 <YouDoIt time=12 instructions="follow the white rabbit"/>
 ```
+
+
 <YouDoIt time=12 instructions="follow the white rabbit"/>
 
 
@@ -142,6 +145,7 @@ vue files are in .vuepress\component folder
 }
 ]" />
 ```
+
 <KeyConcepts :ConceptArray= "[
 {
   Concept:'Natural Language',
@@ -156,7 +160,6 @@ vue files are in .vuepress\component folder
   Details:'In the context of Computer Science, re-writing a Problem in a form that minimizes the Ambiguity of Human/Natural Language'
 }
 ]" />
-
 
 ## vuepress-plugin-container elements
 see .vuepress/config.js
