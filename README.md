@@ -50,7 +50,7 @@ The Documentation Source will be available on GitHub to allow others to instruct
 ## Development Log
 20211003 - Switch to VuePress 2/Next. Was having trouble with sidebar under VP 1. Had to update how Vue components are registered and clean up some issues in Vue templates. Got a successful build on Netlify, so proceeding forward for now
 
-20210927 - Working on creating layouts with Vue components and VuePress [Markdown Slots](https://v1.vuepress.vuejs.org/guide/markdown-slot.html#why-do-i-need-markdown-slot). So for I have not been able to read in .md files for the slots, but I did generate Layout_Unit.vue to create specific sections. Trying different styles, but I don;t have an eye for that
+20210927 - Working on creating layouts with Vue components and VuePress [Markdown Slots](https://v1.vuepress.vuejs.org/guide/markdown-slot.html#why-do-i-need-markdown-slot). So for I have not been able to read in .md files for the slots, but I did generate Layout_Unit.vue to create specific sections. Trying different styles, but I don't have an eye for that
 
 20210926 - Re-creating Project from scratch. Abandoning https://github.com/MarkKozel/cs131_textbook.git to create new repo . Parts of cs1-1_textbook will be manually integrated into new project
 

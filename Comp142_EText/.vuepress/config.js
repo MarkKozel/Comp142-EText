@@ -23,11 +23,11 @@ module.exports = {
     editLinks: false,
     editLinkText: '',
     lastUpdated: true,
-    // nav: [ //Navigation at the top of the page 1.8.2
-    //   { text: 'Course Info', link: '/CourseInformation/', },
-    //   { text: 'EText', link: '/EText/', },
-    //   { text: 'Test', link: '/VuePressTests/', target: '_blank' },
-    // ],
+    nav: [ //Navigation at the top of the page 1.8.2
+      { text: 'Course Info', link: '/CourseInformation/', },
+      { text: 'EText', link: '/EText/', },
+      { text: 'Test', link: '/VuePressTests/', target: '_blank' },
+    ],
     navbar: [ //Navigation at the top of the page
       // { text: 'Course Info', link: '/CourseInformation/', },
       {
