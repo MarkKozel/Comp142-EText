@@ -23,11 +23,11 @@ module.exports = {
     editLinks: false,
     editLinkText: '',
     lastUpdated: true,
-    nav: [ //Navigation at the top of the page 1.8.2
-      { text: 'Course Info', link: '/CourseInformation/', },
-      { text: 'EText', link: '/EText/', },
-      { text: 'Test', link: '/VuePressTests/', target: '_blank' },
-    ],
+    // nav: [ //Navigation at the top of the page 1.8.2
+    //   { text: 'Course Info', link: '/CourseInformation/', },
+    //   { text: 'EText', link: '/EText/', },
+    //   { text: 'Test', link: '/VuePressTests/', target: '_blank' },
+    // ],
     navbar: [ //Navigation at the top of the page
       // { text: 'Course Info', link: '/CourseInformation/', },
       {
@@ -47,7 +47,16 @@ module.exports = {
           },
         ]
       },
-      { text: 'EText', link: '/EText/', },
+      // { text: 'EText', link: '/EText/', },
+      {
+        text: 'EText',
+        children: [
+          { text: "Intro", link: '/EText/Introduction', target: '_blank' },
+          { text: "Foundations", link: '/EText/Foundations', target: '_blank' },
+          { text: "Number Systems", link: '/EText/NumberSystems', target: '_blank' },
+          { text: "Assembly Programming'", link: '/EText/AssemblyProgramming', target: '_blank' },
+        ]
+      },
       { text: 'Test', link: '/VuePressTests/', target: '_blank' },
     ],
   },
@@ -55,13 +64,25 @@ module.exports = {
 
   // sidebar: 'auto',
   sidebar: {
-    'EText/': [
+    '/EText/Foundations': [
       '',
+      'History',
+      'Pioneers'
     ],
-    'CourseInformation/': [
+    '/EText/NumberSystems/': [
       '',
+      'DecimalValues',
+      'BinaryValues',
+      'HexadecimalValues',
+    ],
+    'EText/AssemblyProgramming': [
+
+    ],
+    '/EText/': [
+      '/' //Fallback
     ]
   },
+
 
   markdown: {
     code: {
@@ -112,18 +133,18 @@ module.exports = {
     },
     "@vuepress/back-to-top",
 
+    // [
+    //   "@vuepress/container",
+    //   {
+    //     type: "readmore",
+    //     before: (info) =>
+    //       `<div class="readmore">
+    //         <p class="readmoretitle">Read More: <em> ${info}</em></p>`,
+    //     after: "</div>",
+    //   },
+    // ],
     [
-      "vuepress-plugin-container",
-      {
-        type: "readmore",
-        before: (info) =>
-          `<div class="readmore">
-            <p class="readmoretitle">Read More: <em> ${info}</em></p>`,
-        after: "</div>",
-      },
-    ],
-    [
-      "vuepress-plugin-container",
+      "@vuepress/container",
       {
         type: "left",
         defaultTitle: "",
@@ -131,37 +152,35 @@ module.exports = {
     ],
 
     [
-      "vuepress-plugin-container",
+      "@vuepress/container",
       {
         type: "right",
         defaultTitle: "",
       },
     ],
 
-    ["vuepress-plugin-container",
-      {
-        type: "thinkaboutit",
-        before: info => `<div class="thinkaboutit"><p class="title">${info}</p>`,
-        after: "</div>",
-      },
-    ],
+    // ["@vuepress/container",
+    //   {
+    //     type: "thinkaboutit",
+    //     before: info => `<div class="thinkaboutit"><p class="title">${info}</p>`,
+    //     after: "</div>",
+    //   },
+    // ],
 
     [
-      "vuepress-plugin-container",
+      "@vuepress/container",
       {
         type: "tip",
         defaultTitle: "Tip",
       },
     ],
-    [
-      "vuepress-plugin-container",
-      {
-        type: "whatsgoingon",
-        before: (info) =>
-          `<div class="thinkaboutit"><p class="title">What's Going On</p>`,
-        after: "</div>",
-      },
-    ],
+    // [
+    //   "@vuepress/container", {
+    //     type: "whatsgoingon",
+    //     before: info => `<div class="whatsgoingon"><p class="title">What's Going On>${info}</p>`,
+    //     after: "</div>",
+    //   },
+    // ],
     ['@vuepress/plugin-nprogress'],
     ['@vuepress/active-header-links'],
   ],

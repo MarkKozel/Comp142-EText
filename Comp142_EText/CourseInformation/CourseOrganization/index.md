@@ -1,5 +1,8 @@
 # Course Organization
 
+## History
+
+
 ## Binary Numbers
 
 ### Number Systems

@@ -31,7 +31,7 @@ Option in default theme
     </code-group>
 ```
 
-<code-group>
+<!-- <code-group>
 <code-block title="YARN">
 ```bash
 yarn create vuepress-site [optionalDirectoryName]
@@ -43,7 +43,7 @@ yarn create vuepress-site [optionalDirectoryName]
 npx create-vuepress-site [optionalDirectoryName]
 ```
 </code-block>
-</code-group>
+</code-group> -->
 
 
 ## Links to other .md files

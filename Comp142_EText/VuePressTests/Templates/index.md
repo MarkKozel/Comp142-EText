@@ -7,15 +7,16 @@ Units will contain 1 or more [sections](#section-pages) that present more detail
 
 ```text
 ---
-title: Unit X - SECTION NAME
-shorttitle: OVERVIEW DESCRIPTION
+title: UNIT
+shorttitle: UNIT OVERVIEW DESCRIPTION
+pageType: Unit
 tags: []
 ---
 
 # {{ $frontmatter.title }}
-#### {{ $frontmatter.shorttitle }}
+**{{ $frontmatter.shorttitle }}**
 
-Description of Unit
+INTRODUCTION OF UNIT
 
 ## [SECTION NAME](LINK TO SECTION)
 OVERVIEW OF SECTION
@@ -28,15 +29,16 @@ Main page for a Section, which presents more detailed parts of a Unit, like *uns
 Sections will contain 1 or more [topics](#topic-pages) that present details information, how-tos, and examples
 ```text
 ---
-title: SECTION NAME
-shorttitle: OVERVIEW DESCRIPTION
+title: UNIT - SECTION
+shorttitle: SECTION OVERVIEW DESCRIPTION
+pageType: Section
 tags: []
 ---
 
 # {{ $frontmatter.title }}
-## {{ $frontmatter.shorttitle }}
+**{{ $frontmatter.shorttitle }}**
 
-This section will define the concepts and operations used in modern computer systems
+INTRODUCTION OF SECTION
 
 ## [UNIT X](LINK TO UNIT FILE)
 ### UNIT DESCTIPTION
@@ -50,14 +52,15 @@ Main page for a Topic, which presents lowest level of detailed parts of a relate
 
 ```text
 ---
-title: SECTION - TOPIC
-description: OVERVIEW DESCRIPTION
+title: UNIT - SECTION - TOPIC
+description: TOPIC OVERVIEW DESCRIPTION
+pageType: Topic
 tags: []
 ---
 
 # {{ $frontmatter.title }}
 
-#### {{ $frontmatter.description }}
+**{{ $frontmatter.description }}**
 
 <KeyConcepts :ConceptArray= "[
 {
