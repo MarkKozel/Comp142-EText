@@ -63,7 +63,7 @@ X .FILL #15
 
 These two code examples run top to bottom with no change in flow
 
-![Sequential Flow Diagram](/images/AssemblyProgramming/Diagram_Sequential.png)
+![Sequential Flow Diagram](/images/AssemblyProgramming/ProgramFlow/Diagram_Sequential.png)
 
 ## Conditional Flow
 
@@ -81,7 +81,7 @@ In each case, the comparison is either true or false
 
 With the Condition evaluated, the program will execute or skip certain code if the condition is ```true```. Otherwise, the program will continue executing in a sequential flow
 
-![Conditional Flow Diagram](/images/AssemblyProgramming/Diagram_Conditional.png)
+![Conditional Flow Diagram](/images/AssemblyProgramming/ProgramFlow/Diagram_Conditional.png)
 
 ### IF Branch
 A program can evaluate a condition, such as an arithmetic or logical comparison between values. Based on that condition, the code may skip a section of code that does not pertain to the condition
@@ -176,7 +176,7 @@ A program can execute a section of code multiple times. This is common in arithm
 
 The number of iteration (number of times the section runs) can be a built-in value or based on user or external inputs
 
-![Iterative Flow Diagram](/images/AssemblyProgramming/Diagram_Iterative.png)
+![Iterative Flow Diagram](/images/AssemblyProgramming/ProgramFlow/Diagram_Iterative.png)
 
 ### For Loop
 :::: code-group
