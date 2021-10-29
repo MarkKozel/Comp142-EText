@@ -20,6 +20,8 @@ tags: [whitespace, comments, tabs, formatting, maintenance]
 },
 ]" />
 
+[[toc]]
+
 ## Introduction
 
 Use of formatting of source code will make it easier to understand and updates. Including comments adds another level of built-in help for future updates
@@ -50,5 +52,21 @@ Use blank lines to group associate code. This will make it visually easy to see 
 The blank lines in this code separate Initialization, Processing Loop, and Output
 
 ## Comments
+
+Comments are included to help other developers understand the organization and important parts of the code. This will help simplify future updates
+
+[LC-3 Comments](../../../LC3/WhitespaceAndCommenting#comments) 
+
+### Block Comments
+
+Adding a comment to the beginning of a block can help other developers understand the purpose of group of code
+
+### Inline Comments
+
+Adding a comment to the end of a single line of code helps make clear what the line does. 
+
+### Function Comments
+
+An overall description of the code helps developers understand the big-picture purpose of the program. Block and Inline comments will clarify particular sections
 
 ## Conclusion
