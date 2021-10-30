@@ -32,7 +32,7 @@ These elements are your code are purely for humans. Compilers and assemblers ign
 
 Using blank section or lines in source code makes it more readable for others. It is a way to visually group and align instructions into understandable groups
 
-[LC-3 Whitespace](../../../LC3/WhitespaceAndCommenting#whitespace) 
+### [LC-3 Whitespace Examples](../../../LC3/Development/WhitespaceAndCommenting/index.md#whitespace) 
 
 ### Indenting
 
@@ -51,22 +51,38 @@ Use blank lines to group associate code. This will make it visually easy to see 
 
 The blank lines in this code separate Initialization, Processing Loop, and Output
 
+<QuestionTF question="Use of whitespace helps developers understand the program" answer='true' rightAnswerFeedback="Right! Particularly code that was written a while back, and now needs to be updated by another developer" wrongAnswerFeedback="Actually it is likely to help"/>
+
+<QuestionTF question="Assemblers/Compilers include whitespace in the executable" answer='false' rightAnswerFeedback="Right! Whitespace is stripped out during the first pass of the Assembly process" wrongAnswerFeedback="Incorrect. Assemblers/Compilers completely ignore all whitespace during the process"/>
+
 ## Comments
 
 Comments are included to help other developers understand the organization and important parts of the code. This will help simplify future updates
 
-[LC-3 Comments](../../../LC3/WhitespaceAndCommenting#comments) 
-
-### Block Comments
-
-Adding a comment to the beginning of a block can help other developers understand the purpose of group of code
-
-### Inline Comments
-
-Adding a comment to the end of a single line of code helps make clear what the line does. 
+### [LC-3 Commenting Examples](../../../LC3/Development/WhitespaceAndCommenting/index.md#comments) 
 
 ### Function Comments
 
 An overall description of the code helps developers understand the big-picture purpose of the program. Block and Inline comments will clarify particular sections
 
+@[code js{1-4}](./jsForLoop1.js)
+
+### Block Comments
+
+Adding a comment to the beginning of a block can help other developers understand the purpose of group of code
+
+@[code js{6,10,18}](./jsForLoop2.js)
+
+### Inline Comments
+
+Adding a comment to the end of a single line of code helps make clear what the line does
+
+@[code js{12,20}](./jsForLoop3.js)
+
+<QuestionTF question="Adding good comments to your code now is likely to help you in the future" answer='true' rightAnswerFeedback="Yes, it is very likely to help as you may not recall the reasons for the structure of your code" wrongAnswerFeedback="Well, that may be true, but you will need to have incredible memory recall"/>
+
 ## Conclusion
+
+Using whitespace, troubleshooting and modifying code (by you or another developer) can be easier as code is visually organized in groups and blocks
+
+Adding comments that describe overall function and specific *important* sections will also help with understanding and modifying the program
