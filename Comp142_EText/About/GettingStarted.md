@@ -52,3 +52,17 @@ The GitHub repo and Netlify site are associated so that a commit to GitHub cause
 There is a good setup guide at [VuePressBooks](https://vuepressbook.com/netlify.html#deploying-a-vuepress-site-to-netlify)
 
 Following the above guide, this project is modified on a PC. Changes are pushed to GitHub. Netlify is notified, and starts a Build. When the build is complete, the updates are deployed
+
+Once this is initially setup and working, the standard update cycle is as follows:
+1. Create, modify, remove files
+1. Add changes to local git repo
+
+    ```git add .```
+1. Commit changes
+
+    ```git commit -m '<your commit comment>'```
+1. Push changes to remote repo
+
+    ```git push```
+
+This initiates the build and deploy processes on Netlify
