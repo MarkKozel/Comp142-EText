@@ -2,7 +2,7 @@
 
 ## Development Technologies Used
 
-The project uses [NodeJS (LTS version)](https://nodejs.org/en/download/), [VuePress 1.x](https://vuepress.vuejs.org/guide/getting-started.html), VueJS 2x (built in to VuePress), Markdown (built in to VuePress) git (latest version), [GitHub (online service)](https://github.com/), and [Netlify](https://www.netlify.com/) for basic development/modification workflows
+The project uses [NodeJS (LTS version)](https://nodejs.org/en/download/), [VuePress 2.x](https://vuepress.vuejs.org/guide/getting-started.html), VueJS 2x (built in to VuePress), Markdown (built in to VuePress) git (latest version), [GitHub (online service)](https://github.com/), and [Netlify](https://www.netlify.com/) for basic development/modification workflows
 
 [Project GitHub site](https://github.com/MarkKozel/Comp142-EText)
 
@@ -12,7 +12,13 @@ The project uses [NodeJS (LTS version)](https://nodejs.org/en/download/), [VuePr
 
 Recommended dev tools are: [Visual Studio Code (Code)](https://code.visualstudio.com), Code extensions (Vetur, Code Spell Check, Microsoft Remote suite (if needed)), Modern Web Browser
 
-## Up and Running
+## Up and Developing
+
+These steps will set up your computer to edit and review changes live locally
+
+Other will not be able to see these updates
+
+> The following process is how the original project was developed. Other tools may be substituted
 
 1. Pull this repo, which you can check off the list since you have this document
 1. Install [NodeJS](https://nodejs.org/en/download/) on your system
@@ -36,3 +42,13 @@ Recommended dev tools are: [Visual Studio Code (Code)](https://code.visualstudio
     >Note the web address on this line (something like http://localhost:8080)
 1. Open a web browser and enter the web address
 1. You will, if everything worked, the opening page of the project
+
+## Deploying
+
+To make the materials available to others, the project source files make be rendered at a static site
+
+The GitHub repo and Netlify site are associated so that a commit to GitHub causes a build to be triggered in Netlify
+
+There is a good setup guide at [VuePressBooks](https://vuepressbook.com/netlify.html#deploying-a-vuepress-site-to-netlify)
+
+Following the above guide, this project is modified on a PC. Changes are pushed to GitHub. Netlify is notified, and starts a Build. When the build is complete, the updates are deployed
