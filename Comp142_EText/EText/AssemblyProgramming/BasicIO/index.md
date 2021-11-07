@@ -25,6 +25,8 @@ tags: []
 
 [[toc]]
 
+## [LC-3 Basic I/O](../../../LC3/BasicIO/index.md) 
+
 ## Introduction
 
 A program with hard-coded data (values defined in the source code) can only perform calculations on that data. To change data requires modifying the source code and re-compiling and assembling the code
@@ -38,8 +40,6 @@ Data may be entered from a user with a keyboard or mouse. It may also be provide
 **Output** devices all results of a programs to be made available for use while the program runs or at completion
 
 Monitor and printers are common output devices. Like Input, network and bluetooth are common computer-to-computer connections
-
-[LC-3 Basic I/O](../../../LC3/BasicIO/index.md) 
 
 ## Drivers
 
