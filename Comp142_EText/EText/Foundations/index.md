@@ -10,7 +10,7 @@ tags: []
 
 Description of {{ $frontmatter.title }} {{ $frontmatter.pageType }}
 
-### [A Bit of History](History)
+### [A Bit of History](History/)
 A brief look are the technological events that got us here
 
 ### [Pioneers](Pioneers/)
