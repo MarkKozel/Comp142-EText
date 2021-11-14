@@ -43,8 +43,8 @@ x += 15;
 result = x * 2;
 ```
 :::
-::: code-group-item Assembly
-```assembly
+::: code-group-item LC-3
+```asm
 .ORIG x3000
 
    LD R2, X
@@ -100,7 +100,7 @@ A program can evaluate a condition, such as an arithmetic or logical comparison 
 ```
 :::
 ::: code-group-item Assembly
-```assembly
+```
 .ORIG x3000
   LEA R0, enterAge
   PUTS
@@ -142,7 +142,7 @@ The program may choose between 2 separate code sections based on a condition
 ```
 :::
 ::: code-group-item Assembly
-```assembly
+```
 .ORIG x3000
   LEA R0, enterAge
   PUTS
@@ -189,7 +189,7 @@ x += i; //Add current value if i to x
 ```
 :::
 ::: code-group-item Assembly
-```assembly
+```
 .ORIG x3000
   ADD R1, R1, #0; int x = 0
   ADD R2, R2, #0; int i = 0;

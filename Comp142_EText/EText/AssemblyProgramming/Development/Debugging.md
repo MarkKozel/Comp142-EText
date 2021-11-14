@@ -1,5 +1,5 @@
 ---
-title: Assembly Programming - Debugging LC-3 Code
+title: Assembly Programming - Debugging
 description: Running your code step-by-step during development allows you to see what each line of code is doing. This allows you to verify each line does what you intended it to do
 tags: [Debugging, Step Through, Errors, Syntactic, Functional, Program Flow]
 ---

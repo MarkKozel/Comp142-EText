@@ -1,5 +1,5 @@
 ---
-title: Assembly Programming
+title: Assembly Programming - Design
 description: Best Practices for Designing, Implementing, and Testing LC-3 Code
 tags: []
 ---

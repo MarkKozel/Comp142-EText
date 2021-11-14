@@ -8,7 +8,11 @@ tags: []
 # CS-131 Computer Organization EText
 #### Transistors to Assembly - A Bottom-up View of Computer Science
 
+## [Introduction](Introduction)
+
 ## [Foundations](Foundations)
+- ### [History](Foundations/History)
+- ### [Pioneers](Foundations/Pioneers)
 
 The Foundation of Computer Organization is build if along and rich history of need, creation, and refinement
 
@@ -24,6 +28,17 @@ In this section we will:
 
 - recognize the scientists that led the evolution of today's modern computer
 
+## [Number Systems](NumberSystems)
 
+- ### [Decimal System](NumberSystems/DecimalValues)
+- ### [Binary System](NumberSystems/BinaryValues)
+- ### [Hexadecimal System](NumberSystems/HexadecimalValues)
 
 ## [Assembly Programming](AssemblyProgramming)
+
+- ### [Program Flow](AssemblyProgramming/ProgramFlow)
+- ### [Basic I/O](AssemblyProgramming/BasicIO)
+- ### [Development](AssemblyProgramming/Development)
+    - #### [Whitespace and Commenting](AssemblyProgramming/Development/WhitespaceAndCommenting)
+    - #### [Design](AssemblyProgramming/Development/Design)
+    - #### [Debugging](AssemblyProgramming/Development/Debugging)

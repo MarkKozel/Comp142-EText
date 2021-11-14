@@ -5,7 +5,7 @@ tags: []
 ---
 
 # {{ $frontmatter.title }}
-## {{ $frontmatter.shorttitle }}
+{{ $frontmatter.shorttitle }}
 
 This section will define the concepts and operations used in modern computer systems
 
