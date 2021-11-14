@@ -1,5 +1,9 @@
 const path = require('path');
-// const { dirname } = require('path/posix');
+const shiki = require("@vuepress/plugin-shiki");
+const fs = require('fs')
+
+//Get LC3 language syntax for code fencing
+const lc3asm = JSON.parse(fs.readFileSync(path.join(__dirname, './langSyntax/lcasm.tmLanguage.json')));
 
 module.exports = {
   port: 8081,
@@ -51,10 +55,11 @@ module.exports = {
       {
         text: 'EText',
         children: [
-          { text: "Intro", link: '/EText/Introduction', target: '_blank' },
-          { text: "Foundations", link: '/EText/Foundations', target: '_blank' },
-          { text: "Number Systems", link: '/EText/NumberSystems', target: '_blank' },
-          { text: "Assembly Programming'", link: '/EText/AssemblyProgramming', target: '_blank' },
+          { text: "Table Of Contents", link: '/EText', target: '_blank' },
+          { text: "  Intro", link: '/EText/Introduction', target: '_blank' },
+          { text: "  Foundations", link: '/EText/Foundations', target: '_blank' },
+          { text: "  Number Systems", link: '/EText/NumberSystems', target: '_blank' },
+          { text: "  Assembly Programming'", link: '/EText/AssemblyProgramming', target: '_blank' },
         ]
       },
       { text: 'Test', link: '/VuePressTests/', target: '_blank' },
@@ -64,25 +69,25 @@ module.exports = {
 
   // sidebar: 'auto',
   sidebar: {
-    '/EText/Foundations': [
-      '',
-      'History',
-      'Pioneers'
-    ],
-    '/EText/NumberSystems/': [
-      '',
-      'DecimalValues',
-      'BinaryValues',
-      'HexadecimalValues',
-    ],
-    'EText/AssemblyProgramming': [
-      '',
-      'Development',
-      'ProgramFlow'
-    ],
-    '/EText/': [
-      '/' //Fallback
-    ]
+    // '/EText/Foundations': [
+    //   '',
+    //   'History',
+    //   'Pioneers'
+    // ],
+    // '/EText/NumberSystems/': [
+    //   '',
+    //   'DecimalValues',
+    //   'BinaryValues',
+    //   'HexadecimalValues',
+    // ],
+    // 'EText/AssemblyProgramming': [
+    //   '',
+    //   'Development',
+    //   'ProgramFlow'
+    // ],
+    // '/EText/': [
+    //   '/' //Fallback
+    // ]
   },
 
 
@@ -93,6 +98,11 @@ module.exports = {
   },
 
   plugins: [
+    '@vuepress/plugin-shiki', {
+      theme: 'nord',
+      langs: ['java', 'javascript', lc3asm]
+    },
+
     '@vuepress/register-components',
     {
       componentsDir: path.join(__dirname, './components'),
@@ -135,16 +145,25 @@ module.exports = {
     },
     "@vuepress/back-to-top",
 
-    // [
-    //   "@vuepress/container",
-    //   {
-    //     type: "readmore",
-    //     before: (info) =>
-    //       `<div class="readmore">
-    //         <p class="readmoretitle">Read More: <em> ${info}</em></p>`,
-    //     after: "</div>",
-    //   },
-    // ],
+    [
+      "@vuepress/container",
+      {
+        type: "readmore",
+        before: (info) =>
+          `<div class="readmore">
+            <p class="readmoretitle">Read More: <em> ${info}</em></p>`,
+        after: () => "</div>\n",
+      },
+    ],
+
+    ["@vuepress/container",
+      {
+        type: "thinkaboutit",
+        before: (info) => `<div class="thinkaboutit"><p class="title">${info}</p>`,
+        after: () => "</div>\n",
+      },
+    ],
+
     [
       "@vuepress/container",
       {
