@@ -34,6 +34,8 @@ In this section we will:
 - ### [Binary System](NumberSystems/BinaryValues)
 - ### [Hexadecimal System](NumberSystems/HexadecimalValues)
 
+## [Logic and Digital Circuits](LogicAndDigitalCircuits)
+
 ## [Assembly Programming](AssemblyProgramming)
 
 - ### [Program Flow](AssemblyProgramming/ProgramFlow)
