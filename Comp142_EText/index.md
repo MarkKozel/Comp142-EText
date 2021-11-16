@@ -15,8 +15,6 @@ actions:
 - text: About this textbook
   link: /About
   type: secondary
-# actionText: Get Started
-# actionLink: /EText/
 features:
 - title: School
   details: Allan Hancock College, Santa Maria, Ca

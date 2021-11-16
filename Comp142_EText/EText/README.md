@@ -38,6 +38,12 @@ In this section we will:
 
 ## [Assembly Programming](AssemblyProgramming)
 
+- ### [Commands](AssemblyProgramming/Commands)
+    - #### [ALU Commands](AssemblyProgramming/Commands/ALUCommands)
+    - #### [Memory Access Commands](AssemblyProgramming/Commands/MemoryAccessCommands)
+    - #### [Branching Commands](AssemblyProgramming/Commands/BranchingCommands)
+    - #### [Subroutine Commands](AssemblyProgramming/Commands/SubroutineCommands)
+    
 - ### [Program Flow](AssemblyProgramming/ProgramFlow)
 - ### [Basic I/O](AssemblyProgramming/BasicIO)
 - ### [Development](AssemblyProgramming/Development)
