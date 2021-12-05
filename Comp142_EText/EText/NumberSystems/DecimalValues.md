@@ -53,7 +53,7 @@ The rule is:
 - digits to the right are higher value
 - The value increase/decrease is a multiple of 10
 
-![Base10 PlaceValues](/images/NumberSystems/Base10_PlaceValues1.png)
+![Base10 PlaceValues1](/images/NumberSystems/Base10_PlaceValues1.png)
 
 The **4** in 4321 is increased by *10* raised to the power of its position, *3*, in the number string. Position numbers start at 0 are increase from left to right
 
@@ -69,12 +69,17 @@ After calculating the weighed value of each digit, sum all results for the final
 This may seem trivial, after all, you have likely known how to do this since elementary school.  However, it is important to understand the process
 
 ### Positional Notation for any Base
+
+The positional notation works for other base number systems. The calculation for any base includes that base
+
+![Base10 PlaceValues2](/images/NumberSystems/Base10_PlaceValues2.png)
+
 A more general formula for converting a single digit value for a given base is:
 > Digit * Base<sup>Place Value Position</sup>
 
 Now apply the same algorithm for calculating the value of multi-digit number string (group of digits) is:
-1. perform the single digit place value for each digit and the associated base
-1. add all the results together
+1. Perform the single digit place value for each digit and the associated base
+1. Add all the results together
 
 ## Base 10 as a Human Default
 
