@@ -15,12 +15,8 @@ tags: []
   Details:'The number system you learned in early elementary school'
 },
 {  
-  Concept:'Why did humans choose base 10 as a default?',
+  Concept:'Why do humans use base 10 as a default?',
   Details:'Likely because we started counting with our fingers. As numbers got more complicated, we stayed with base 10'  
-},
-{
-  Concept:'Why not use base 10 in computers?',
-  Details:'Base 10 processes are too complicated to re-create in hardware and low-level software'
 }
 ]" />
 
@@ -38,15 +34,19 @@ tags: []
 
 Also referred to as Decimal and Denary system, *Base 10* is a system commonly used by humans to refer to integer values or quantities
 
-*Base 10* is a mathematical term for the system of counting humans have standardized on for counting things. The **10** is the number of symbols used to represent quantities
+*Base 10* is the name for the system commonly used by modern humans to counting things. The **10** is the number of symbols used to represent quantities. Each symbol (digit) represents a single quantity in the range of symbols 0 -9.
+
+Unlike Roman Numerals, no digit has an additive ot subtractive action on an adjacent digit
 
 The *10* in **Base 10** identifies the largest value that can be represented in a single digit (symbol)
-> Base - 1, Therefore, the largest value is a single digit is 9
 
-### Place Value
-In order to accurately represent values larger than 9 in **Base 10**, there needs to be a rule it calculate the value of an adjacent digit in a group of digits (number string)
+### Positional Notation
 
-Place values are essentially a weighting of each single digit according to it's position in the number string
+AKA *Place Value*
+
+In order to  represent values larger than 9 in **Base 10** without adding new symbols, there needs to be a rule it calculate the value of an adjacent digit in a group of digits (number string)
+
+The position of a are essentially a weighting (factor) of each single digit according to it's position in the number string
 
 The rule is:
 - digits to the left are a lessor value
@@ -55,47 +55,26 @@ The rule is:
 
 ![Base10 PlaceValues](/images/NumberSystems/Base10_PlaceValues1.png)
 
+The **4** in 4321 is increased by *10* raised to the power of its position, *3*, in the number string. Position numbers start at 0 are increase from left to right
+
 To calculate a single digit place value:
-> Digit * 10 <sup>Place Value Position</sup>
+> Digit * 10 <sup>Position</sup>
 
-Example:
-5 in Place Value Position 3 (The 4th position) is:
+After calculating the weighed value of each digit, sum all results for the final value
 
-```
-5 * 10^3
-5 * 1,000
-5000
-```
+> You may have noticed this is essential converting a base 10 value to a base 10 value...so nothing really seems to change. That is true and, in a strange sort of way, proves itself
+>
+>We will, however, use this process/algorithm to convert other base number string to base 10
 
-The algorithm for calculating the value of multi-digit number string (group of digits) is:
-1. perform the single digit place value for each digit
-1. add all the results together
+This may seem trivial, after all, you have likely known how to do this since elementary school.  However, it is important to understand the process
 
-```
-4367
-(4 * 10^3) + (3 * 10^2) + (6 * 10^1) + (7 * 10^0)
-4,000 + 300 + 60 + 7
-4367
-```
-
-This may seem trivial, after all, you have likely known how to do this since lower-division elementary school.  However, it is important to understand the process
-
-### Place Value for any Base
+### Positional Notation for any Base
 A more general formula for converting a single digit value for a given base is:
 > Digit * Base<sup>Place Value Position</sup>
 
 Now apply the same algorithm for calculating the value of multi-digit number string (group of digits) is:
 1. perform the single digit place value for each digit and the associated base
 1. add all the results together
-
-
-### extra 
-
-![Base10 Algorithm](/images/NumberSystems/Base10_Algorithm.png)
->(N<sub>5</sub> * 10<sup>5</sup>) **+** (N<sub>4</sub> * 10<sup>4</sup>) **+** (N<sub>3</sub> * 10<sup>3</sup>) **+** (N<sub>2</sub> * 10<sup>2</sup>) **+** (N<sub>1</sub> * 10<sup>1</sup>) **+** (N<sub>0</sub> * 10<sup>0</sup>)
->
->N<sub>5</sub> * 100,000 + N<sub>4</sub>  * 10,000 + N<sub>3</sub>  * 1,000 + N<sub>2</sub>  * 100 + N<sub>1</sub>  * 10 + N<sub>0</sub> * 1
-
 
 ## Base 10 as a Human Default
 
@@ -109,6 +88,12 @@ There is no particular importance of 10 as a number system, it is just the syste
 [History](https://en.wikipedia.org/wiki/Decimal#History)
 :::
 
-
-
 ## Conclusion
+
+The decimal system is common to many daily activities. It has evolved along side human's needs in understanding more complex parts of our world
+
+Positional Notation allows us to only need the core symbols of the number system to express numbers larger than the given *base-iness*
+
+Decimal is likely used by humans due to our built-in base 10 calculator...our hands
+
+As we will see soon, computers require a different number system to ensure simple translation between hardware (voltage) signals and software (discrete) data values
