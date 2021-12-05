@@ -183,10 +183,12 @@ High-level abstraction of computer architecture
 ```md
 ::: thinkaboutit Newton's First Law
 In an inertial frame of reference, an object either remains at rest or continues to move at a constant velocity, unless acted upon by a force
+:::
 ```
 ::: thinkaboutit Newton's First Law
 In an inertial frame of reference, an object either remains at rest or continues to move at a constant velocity, unless acted upon by a force
 :::
+```
 
 ### What's Going On
 ```md
@@ -203,6 +205,23 @@ Here's the 411 on the thing, above...
 1. that
 1. the other
 :::
+
+### By The Numbers
+
+```md
+::: bythenumbers Test Table
+|table|data|
+|-|-|
+|1|2|
+:::
+```
+
+::: bythenumbers Test Table
+|table|data|
+|-|-|
+|1|2|
+:::
+
 
 ### Right container (with link)
 ```md

@@ -165,6 +165,24 @@ module.exports = {
     ],
 
     [
+      "@vuepress/container", {
+        type: "whatsgoingon",
+        before: (info) => `<div class="whatsgoingon">
+          <p class="title">What's Going On${info}</p>`,
+        after: () => "</div>\n",
+      },
+    ],
+
+    [
+      "@vuepress/container", {
+        type: "bythenumbers",
+        before: (info) => `<div class="bythenumbers"><h4>By The Numbers: <u>${info}</u></h4>`,
+        after: () => "</div>\n",
+      },
+    ],
+
+
+    [
       "@vuepress/container",
       {
         type: "left",
@@ -195,13 +213,7 @@ module.exports = {
         defaultTitle: "Tip",
       },
     ],
-    // [
-    //   "@vuepress/container", {
-    //     type: "whatsgoingon",
-    //     before: info => `<div class="whatsgoingon"><p class="title">What's Going On>${info}</p>`,
-    //     after: "</div>",
-    //   },
-    // ],
+
     ['@vuepress/plugin-nprogress'],
     ['@vuepress/active-header-links'],
   ],

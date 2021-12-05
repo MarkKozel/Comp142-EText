@@ -10,6 +10,11 @@ tags: [number systems, binary, data, digital, analog, hexadecimal, hex]
 
 Description of {{ $frontmatter.title }} {{ $frontmatter.pageType }}
 
+### **Computerphile** - Why Use Binary? - Computerphile
+<p>Surely decimal numbers are easier to understand than binary? So why don't computers use them? Professor Brailsford explains the relationships between binary, power and simplicity.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/thrx3SBEpL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Decimal Values
 [Decimal Values](./DecimalValues)
 
