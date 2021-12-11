@@ -17,9 +17,14 @@ tags: []
 {  
   Concept:'Why do humans use base 10 as a default?',
   Details:'Likely because we started counting with our fingers. As numbers got more complicated, we stayed with base 10'  
+},
+{
+  Concept:'Why not use base 10 in computers?',
+  Details:'Base 10 processes are too complicated to re-create in hardware and low-level software'
 }
 ]" />
 
+## Introduction to {{ $frontmatter.title }}
 
 ## What is **Base 10**?
 
@@ -94,11 +99,3 @@ There is no particular importance of 10 as a number system, it is just the syste
 :::
 
 ## Conclusion
-
-The decimal system is common to many daily activities. It has evolved along side human's needs in understanding more complex parts of our world
-
-Positional Notation allows us to only need the core symbols of the number system to express numbers larger than the given *base-iness*
-
-Decimal is likely used by humans due to our built-in base 10 calculator...our hands
-
-As we will see soon, computers require a different number system to ensure simple translation between hardware (voltage) signals and software (discrete) data values
