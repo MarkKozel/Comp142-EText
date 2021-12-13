@@ -98,6 +98,24 @@ module.exports = {
   },
 
   plugins: [
+
+    ['@vuepress/container', {
+      type: 'col-wrapper',
+      defaultTitle: '',
+    }],
+    ['@vuepress/container', {
+      type: 'col-full',
+      defaultTitle: '',
+    }],
+    ['@vuepress/container', {
+      type: 'col-half',
+      defaultTitle: '',
+    }],
+    ['@vuepress/container', {
+      type: 'col-third',
+      defaultTitle: '',
+    }],
+
     '@vuepress/plugin-shiki', {
       theme: 'nord',
       langs: ['java', 'javascript', lc3asm]
@@ -159,7 +177,9 @@ module.exports = {
     ["@vuepress/container",
       {
         type: "thinkaboutit",
-        before: (info) => `<div class="thinkaboutit"><p class="title">${info}</p>`,
+        // before: (info) => `<div class="thinkaboutit"><p class="thinkaboutittitle">${info}</p>`,
+        before: (info) =>
+          `<div class="custom-container thinkaboutit"> ${info ? `<p class="custom-container-title thinkaboutittitle">${info}</p>` : ''}\n`,
         after: () => "</div>\n",
       },
     ],

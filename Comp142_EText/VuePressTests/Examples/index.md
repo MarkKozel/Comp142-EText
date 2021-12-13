@@ -16,22 +16,35 @@ Units contain sections of more specific content (Units)
 ## Code Blocks
 Option in default theme
 
-```bash
-    <code-group>
-      <code-block title="YARN">
-      ```bash
-      yarn create vuepress-site [optionalDirectoryName]
-      ```
-      </code-block>
-      <code-block title="NPM">
-      ```bash
-      npx create-vuepress-site [optionalDirectoryName]
-      ```
-      </code-block>
-    </code-group>
-```
+````md
+:::: code-group
+  ::: code-group-item FOO
+    ```js
+    const foo = 'foo'
+    ```
+  :::
+  ::: code-group-item BAR
+    ```js
+    const bar = 'bar'
+    ```
+  :::
+::::
+````
 
-<!-- <code-group>
+:::: code-group
+::: code-group-item FOO
+```js
+const foo = 'foo'
+```
+:::
+::: code-group-item BAR
+```js
+const bar = 'bar'
+```
+:::
+::::
+
+<code-group>
 <code-block title="YARN">
 ```bash
 yarn create vuepress-site [optionalDirectoryName]
@@ -43,7 +56,7 @@ yarn create vuepress-site [optionalDirectoryName]
 npx create-vuepress-site [optionalDirectoryName]
 ```
 </code-block>
-</code-group> -->
+</code-group>
 
 
 ## Links to other .md files
@@ -233,6 +246,16 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion)
 From [Wikipedia](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion)
 :::
 
+### Details
+```md
+::: details
+Tip container of `@vuepress/theme-default`
+:::
+```
+::: details
+Tip container of `@vuepress/theme-default`
+:::
+
 ### Tip
 ```md
 ::: tip
@@ -242,3 +265,24 @@ Tip container of `@vuepress/theme-default`
 ::: tip
 Tip container of `@vuepress/theme-default`
 :::
+
+### Warning
+```md
+::: warning
+Tip container of `@vuepress/theme-default`
+:::
+```
+::: warning
+Tip container of `@vuepress/theme-default`
+:::
+
+### Danger
+```md
+::: danger
+Tip container of `@vuepress/theme-default`
+:::
+```
+::: danger
+Tip container of `@vuepress/theme-default`
+:::
+
