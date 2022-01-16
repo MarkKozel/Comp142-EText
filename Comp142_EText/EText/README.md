@@ -8,9 +8,10 @@ tags: []
 # CS-131 Computer Organization EText
 #### Transistors to Assembly - A Bottom-up View of Computer Science
 
-## [Introduction](Introduction)
+## [Introduction to this Course](Introduction)
 
 ## [Foundations](Foundations)
+- ### [Concepts](Foundations/Concepts)
 - ### [History](Foundations/History)
 - ### [Pioneers](Foundations/Pioneers)
 
