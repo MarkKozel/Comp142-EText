@@ -1,14 +1,15 @@
-const path = require('path');
-const shiki = require("@vuepress/plugin-shiki");
-const fs = require('fs')
+// const path = require('path');
+// const shiki = require("@vuepress/plugin-shiki");
+// const fs = require('fs')
 
 //Get LC3 language syntax for code fencing
-const lc3asm = JSON.parse(fs.readFileSync(path.join(__dirname, './langSyntax/lcasm.tmLanguage.json')));
+// const lc3asm = JSON.parse(fs.readFileSync(path.join(__dirname, './langSyntax/lcasm.tmLanguage.json')));
 
 module.exports = {
   port: 8081,
   title: "CS 131 - Computer Organization",
   description: "Transistors to Assembly - A bottom-up View of Computer Science",
+  cache: false,
 
   /**
  * Extra tags to be injected to the page HTML `<head>`
@@ -32,11 +33,13 @@ module.exports = {
     //   { text: 'EText', link: '/EText/', },
     //   { text: 'Test', link: '/VuePressTests/', target: '_blank' },
     // ],
-    navbar: [ //Navigation at the top of the page
+    // navbar: [ //Navigation at the top of the page
+    nav: [ //Navigation at the top of the page
       // { text: 'Course Info', link: '/CourseInformation/', },
       {
         text: 'Course Info',
-        children: [
+        // children: [
+        items: [
           {
             text: "Info",
             link: '/CourseInformation/'
@@ -54,40 +57,49 @@ module.exports = {
       // { text: 'EText', link: '/EText/', },
       {
         text: 'EText',
-        children: [
-          { text: "Table Of Contents", link: '/EText', target: '_blank' },
-          { text: "  Intro", link: '/EText/Introduction', target: '_blank' },
-          { text: "  Foundations", link: '/EText/Foundations', target: '_blank' },
-          { text: "  Number Systems", link: '/EText/NumberSystems', target: '_blank' },
-          { text: "  Assembly Programming'", link: '/EText/AssemblyProgramming', target: '_blank' },
+        // children: [
+        items: [
+          { text: "Table Of Contents", link: '/EText/', target: '_blank' },
+          { text: "  Intro", link: '/EText/Introduction/', target: '_blank' },
+          { text: "  Foundations", link: '/EText/Foundations/', target: '_blank' },
+          { text: "  Number Systems", link: '/EText/NumberSystems/', target: '_blank' },
+          { text: "  Assembly Programming'", link: '/EText/AssemblyProgramming/', target: '_blank' },
         ]
       },
-      { text: 'Test', link: '/VuePressTests/', target: '_blank' },
+      {
+        text: 'Test',
+        items: [
+          { text: "Test Page", link: '/VuePressTests/', target: '_blank' },
+          { text: "Examples", link: '/VuePressTests/Examples/', target: '_blank' },
+          { text: "Layouts", link: '/VuePressTests/Layouts/', target: '_blank' },
+          { text: "Templates", link: '/VuePressTests/Templates/', target: '_blank' },
+        ],
+      }
     ],
   },
   // displayAllHeaders: true, //display all header links for every page
 
   // sidebar: 'auto',
   sidebar: {
-    // '/EText/Foundations': [
-    //   '',
-    //   'History',
-    //   'Pioneers'
-    // ],
-    // '/EText/NumberSystems/': [
-    //   '',
-    //   'DecimalValues',
-    //   'BinaryValues',
-    //   'HexadecimalValues',
-    // ],
-    // 'EText/AssemblyProgramming': [
-    //   '',
-    //   'Development',
-    //   'ProgramFlow'
-    // ],
-    // '/EText/': [
-    //   '/' //Fallback
-    // ]
+    '/EText/Foundations/': [
+      '',
+      'History',
+      'Pioneers'
+    ],
+    '/EText/NumberSystems/': [
+      '',
+      'DecimalValues',
+      'BinaryValues',
+      'HexadecimalValues',
+    ],
+    'EText/AssemblyProgramming/': [
+      '',
+      'Development',
+      'ProgramFlow'
+    ],
+    '/EText/': [
+      '/' //Fallback
+    ]
   },
 
 
@@ -99,59 +111,59 @@ module.exports = {
 
   plugins: [
 
-    ['@vuepress/container', {
-      type: 'col-wrapper',
-      defaultTitle: '',
-    }],
-    ['@vuepress/container', {
-      type: 'col-full',
-      defaultTitle: '',
-    }],
-    ['@vuepress/container', {
-      type: 'col-half',
-      defaultTitle: '',
-    }],
-    ['@vuepress/container', {
-      type: 'col-third',
-      defaultTitle: '',
-    }],
+    // ['@vuepress/container', {
+    //   type: 'col-wrapper',
+    //   defaultTitle: '',
+    // }],
+    // ['@vuepress/container', {
+    //   type: 'col-full',
+    //   defaultTitle: '',
+    // }],
+    // ['@vuepress/container', {
+    //   type: 'col-half',
+    //   defaultTitle: '',
+    // }],
+    // ['@vuepress/container', {
+    //   type: 'col-third',
+    //   defaultTitle: '',
+    // }],
 
-    '@vuepress/plugin-shiki', {
-      theme: 'nord',
-      langs: ['java', 'javascript', lc3asm]
-    },
+    // '@vuepress/plugin-shiki', {
+    //   theme: 'nord',
+    //   langs: ['java', 'javascript', lc3asm]
+    // },
 
-    '@vuepress/register-components',
-    {
-      componentsDir: path.join(__dirname, './components'),
-    },
+    // '@vuepress/register-components',
+    // {
+    //   componentsDir: path.join(__dirname, './components'),
+    // },
 
-    'demo-code', {
-      jsLibs: [
-        // umd
-        'https://unpkg.com/tua-storage/dist/TuaStorage.umd.js',
-      ],
-      cssLibs: [
-        'https://unpkg.com/animate.css@3.7.0/animate.min.css',
-      ],
-      showText: 'show code',
-      hideText: 'hide',
-      styleStr: 'text-decoration: underline;',
-      minHeight: 200,
-      onlineBtns: {
-        codepen: false,
-        jsfiddle: false,
-        codesandbox: false,
-      },
-      codesandbox: {
-        deps: { 'lodash': 'latest' },
-        json: '',
-        query: '',
-        embed: '',
-      },
-      demoCodeMark: 'demo-code',
-      copyOptions: { align: 'top', selector: '.demo-and-code-wrapper div[class*="language-"] pre', successText: "copied", staticIcon: true },
-    },
+    // 'demo-code', {
+    //   jsLibs: [
+    //     // umd
+    //     'https://unpkg.com/tua-storage/dist/TuaStorage.umd.js',
+    //   ],
+    //   cssLibs: [
+    //     'https://unpkg.com/animate.css@3.7.0/animate.min.css',
+    //   ],
+    //   showText: 'show code',
+    //   hideText: 'hide',
+    //   styleStr: 'text-decoration: underline;',
+    //   minHeight: 200,
+    //   onlineBtns: {
+    //     codepen: false,
+    //     jsfiddle: false,
+    //     codesandbox: false,
+    //   },
+    //   codesandbox: {
+    //     deps: { 'lodash': 'latest' },
+    //     json: '',
+    //     query: '',
+    //     embed: '',
+    //   },
+    //   demoCodeMark: 'demo-code',
+    //   copyOptions: { align: 'top', selector: '.demo-and-code-wrapper div[class*="language-"] pre', successText: "copied", staticIcon: true },
+    // },
     // ],
     "vuepress-plugin-copyright",
     {
@@ -161,10 +173,10 @@ module.exports = {
         "Mark Kozel. This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License",
       clipboardComponent: "../components/ClipboardComponent.vue",
     },
-    "@vuepress/back-to-top",
+    // "@vuepress/back-to-top",
 
     [
-      "@vuepress/container",
+      "vuepress-plugin-container",
       {
         type: "readmore",
         before: (info) =>
@@ -174,7 +186,7 @@ module.exports = {
       },
     ],
 
-    ["@vuepress/container",
+    ["vuepress-plugin-container",
       {
         type: "thinkaboutit",
         // before: (info) => `<div class="thinkaboutit"><p class="thinkaboutittitle">${info}</p>`,
@@ -185,7 +197,7 @@ module.exports = {
     ],
 
     [
-      "@vuepress/container", {
+      "vuepress-plugin-container", {
         type: "whatsgoingon",
         before: (info) => `<div class="whatsgoingon">
           <p class="title">What's Going On${info}</p>`,
@@ -194,7 +206,7 @@ module.exports = {
     ],
 
     [
-      "@vuepress/container", {
+      "vuepress-plugin-container", {
         type: "bythenumbers",
         before: (info) => `<div class="bythenumbers"><h4>By The Numbers: <u>${info}</u></h4>`,
         after: () => "</div>\n",
@@ -203,7 +215,7 @@ module.exports = {
 
 
     [
-      "@vuepress/container",
+      "vuepress-plugin-container",
       {
         type: "left",
         defaultTitle: "",
@@ -211,7 +223,7 @@ module.exports = {
     ],
 
     [
-      "@vuepress/container",
+      "vuepress-plugin-container",
       {
         type: "right",
         defaultTitle: "",
@@ -227,14 +239,14 @@ module.exports = {
     // ],
 
     [
-      "@vuepress/container",
+      "vuepress-plugin-container",
       {
         type: "tip",
         defaultTitle: "Tip",
       },
     ],
 
-    ['@vuepress/plugin-nprogress'],
-    ['@vuepress/active-header-links'],
+    // ['@vuepress/plugin-nprogress'],
+    // ['@vuepress/active-header-links'],
   ],
 }
